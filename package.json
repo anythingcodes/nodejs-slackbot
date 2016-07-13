@@ -1,0 +1,15 @@
+{
+  "name": "nodejs-chatbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": ".token && node ./app.js"
+  },
+  "author": "Liz Shaw",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/client": "^3.5.1",
+    "is-phone": "^2.0.0"
+  }
+}
