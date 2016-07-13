@@ -47,7 +47,8 @@ handlers.DEFAULT = (message) => {
 
 handlers.GET_NAME = (message) => {
     console.log(`${message.text}\n${state}`);
-    rtm.sendMessage("Ok, what's your address?", message.channel);
+    let names = message.text.split(' ');
+    rtm.sendMessage(`Perfect, ${names[0]}, and what's your address?`, message.channel);
     setState(states.GET_ADDRESS);
     console.log(`${message.text}\n${state}`);
 }
